@@ -39,6 +39,7 @@ Producción: **https://www.autovoltenergy.net** (GitHub Pages)
 | `sitemap.xml` | Mapa del sitio para buscadores |
 | `robots.txt` | Directivas de rastreo + referencia al sitemap |
 | `CNAME` | Dominio personalizado para GitHub Pages (`www.autovoltenergy.net`) |
+| `google6258b155e64498e9.html` | Archivo de verificación de Google Search Console. No eliminar mientras se use ese método |
 | `.nojekyll` | Desactiva el procesamiento Jekyll de GitHub Pages |
 | `assets/` | Logo (transparente y 4K) e isotipo (favicon) |
 
@@ -90,6 +91,18 @@ Cada push a `main` republica el sitio automáticamente. No depende de `Operativo
 | DNS actual | `www.autovoltenergy.net` resuelve a `morpheus8810-blip.github.io` |
 | DNS pendiente | Ninguno para `www` |
 | HTTPS | Activo: `https://www.autovoltenergy.net/` responde `200 OK` |
+| Enforce HTTPS | Pendiente: `http://www.autovoltenergy.net/` aún responde `200 OK` sin redirigir |
+
+### Estado SEO 2026-06-14
+
+| Punto | Estado |
+|---|---|
+| Search Console | Propiedad verificada por archivo HTML |
+| Verificación | `google6258b155e64498e9.html` publicado en la raíz del sitio |
+| `robots.txt` | Activo y apunta a `https://www.autovoltenergy.net/sitemap.xml` |
+| `sitemap.xml` | Enviado y leído como correcto; 8 páginas descubiertas |
+| Analítica/cookies | Sin scripts de tracking por ahora |
+| Perfil de Empresa de Google | Pendiente. Crear como negocio virtual/área de servicio, sin dirección visible |
 
 ## Pendientes
 
@@ -97,8 +110,8 @@ Cada push a `main` republica el sitio automáticamente. No depende de `Operativo
   cobrar sesiones o instalar estaciones de acceso público.
 - **Placeholders legales:** `[NIT]`, `[DIRECCIÓN COMERCIAL]`, `[CIUDAD]` y `[FECHA DE VIGENCIA]`
   siguen pendientes en `terminos.html` y `privacidad.html` hasta tener datos oficiales.
-- **SEO:** dar de alta el sitio en Google Search Console, enviar `sitemap.xml`
-  y crear/actualizar el Perfil de Empresa de Google.
+- **SEO local:** crear/actualizar el Perfil de Empresa de Google como negocio virtual/área de servicio,
+  sin dirección visible hasta tener sede o estación pública real.
 - **Analítica:** no instalar scripts de tracking/cookies por ahora. Usar Search Console primero;
   GA4/Meta Pixel/Hotjar/Plausible quedan para después de aprobar privacidad y aviso/capa de cookies si aplica.
 - **Badges de tiendas:** Google Play / App Store quedan como elementos visuales no clicables hasta publicar las apps.
