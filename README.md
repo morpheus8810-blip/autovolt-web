@@ -29,10 +29,12 @@ Producción: **https://www.autovoltenergy.net** (GitHub Pages)
 | `index.html` | Landing principal (conductores, conjuntos, centros comerciales, empresas, plataforma, contacto) |
 | `cargadores-conjuntos-residenciales.html` | Modelo anfitrión: CPO instala sin costo; la copropiedad elige ingreso o energía más barata. Foco carga lenta |
 | `cargadores-centros-comerciales.html` | Modelo anfitrión: el sitio aporta espacio y conexión; AutoVolt el punto de carga rápida; comisión 7,5%–20% sobre neto |
+| `soluciones-para-empresas.html` | Página comercial: 3 líneas para empresas/operadores (importación, instalación, plataforma) + llave en mano |
 | `software-para-electrolineras.html` | Página comercial: software/plataforma CPO (keyword principal) |
 | `como-poner-cargadores-en-mi-conjunto.html` | Guía SEO (top-of-funnel) que enlaza a la página comercial de conjuntos |
 | `terminos.html` | Términos y Condiciones |
 | `privacidad.html` | Política de Privacidad y Tratamiento de Datos |
+| `PENDIENTES-CUMPLIMIENTO.md` | Checklist operativo/legal/técnico antes de publicar app, cobrar o instalar estaciones públicas |
 | `styles.css` | Hoja de estilos compartida |
 | `sitemap.xml` | Mapa del sitio para buscadores |
 | `robots.txt` | Directivas de rastreo + referencia al sitemap |
@@ -73,8 +75,10 @@ Cada push a `main` republica el sitio automáticamente. No depende del repo oper
 
 ## Pendientes
 
+- **Cumplimiento:** revisar y cerrar `PENDIENTES-CUMPLIMIENTO.md` antes de publicar la app,
+  cobrar sesiones o instalar estaciones de acceso público.
 - **Placeholders legales:** `[NIT]`, `[DIRECCIÓN COMERCIAL]`, `[CIUDAD]` y `[FECHA DE VIGENCIA]`
-  en `terminos.html` y `privacidad.html`.
-- **Search Console / analítica:** dar de alta el sitio en Google Search Console (enviar `sitemap.xml`),
-  crear el Perfil de Empresa de Google y añadir analítica (GA4 o Plausible).
-- **Badges de tiendas:** los enlaces de Google Play / App Store apuntan a `#` hasta publicar las apps.
+  siguen pendientes en `terminos.html` y `privacidad.html` hasta tener datos oficiales.
+- **Search Console / analítica:** dar de alta el sitio en Google Search Console, enviar `sitemap.xml`,
+  crear el Perfil de Empresa de Google y añadir analítica solo después de definir aviso/capa de cookies si aplica.
+- **Badges de tiendas:** Google Play / App Store quedan como elementos visuales no clicables hasta publicar las apps.

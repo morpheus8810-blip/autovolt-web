@@ -57,13 +57,18 @@
       <img src="assets/logo.png" alt="AutoVolt Energy" />
     </a>
     <nav class="nav__links">
-      <a href="cargadores-conjuntos-residenciales.html">Conjuntos</a>
+      <div class="nav__dropdown">
+        <button type="button" class="nav__dropbtn" aria-haspopup="true">Soluciones <span class="caret">▾</span></button>
+        <div class="nav__menu">
+          <a href="cargadores-conjuntos-residenciales.html">Conjuntos y hoteles</a>
+          <a href="cargadores-centros-comerciales.html">Centros comerciales</a>
+          <a href="soluciones-para-empresas.html">Empresas y operadores</a>
+        </div>
+      </div>
       <a href="#conductores">Conductores</a>
-      <a href="software-para-electrolineras.html">Software</a>
-      <a href="#empresas">Empresas</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a href="#descargar" class="btn btn--primary nav__cta">Descargar app</a>
+    <a href="#soluciones" class="btn btn--primary nav__cta">Ver soluciones</a>
   </header>
 
   <main>
@@ -71,64 +76,59 @@
     <section id="inicio" class="hero">
       <div class="hero__glow"></div>
       <div class="hero__content">
-        <span class="badge">⚡ Operador de carga eléctrica · Colombia</span>
         <h1>Potencia para <span class="grad">cada kilómetro</span>.</h1>
         <p class="hero__sub">
-          AutoVolt Energy opera y habilita la carga de vehículos eléctricos en
-          Colombia. Para conductores, una app para encontrar, cargar y pagar.
-          Para negocios, importación de hardware, instalación y una plataforma
-          lista para operar con tu marca.
+          AutoVolt Energy es un operador de carga (CPO) colombiano. Instalamos y
+          operamos cargadores en conjuntos, hoteles y centros comerciales; ofrecemos
+          soluciones de hardware y software para empresas y emprendedores que quieren
+          montar su propio negocio de carga; y le damos a los conductores una app
+          para encontrar, cargar y pagar.
         </p>
         <div class="hero__actions">
-          <a href="#descargar" class="btn btn--primary btn--lg">Descargar la app</a>
-          <a href="#empresas" class="btn btn--ghost btn--lg">Soluciones para empresas</a>
-        </div>
-        <div class="hero__stats">
-          <div><strong>CPO</strong><span>operador propio</span></div>
-          <div><strong>OCPP 1.6-J</strong><span>estándar abierto</span></div>
-          <div><strong>24/7</strong><span>energía disponible</span></div>
+          <a href="#soluciones" class="btn btn--primary btn--lg">Ver soluciones</a>
+          <a href="#descargar" class="btn btn--ghost btn--lg">Descargar la app</a>
         </div>
       </div>
     </section>
 
-    <!-- ── Selector de público ──────────────────────────────────────── -->
-    <section class="section">
+    <!-- ── Soluciones (hub) ─────────────────────────────────────────── -->
+    <section id="soluciones" class="section">
       <div class="section__head">
-        <h2>Una red, dos formas de usarla</h2>
-        <p>Ya seas conductor o quieras montar tu propia operación de carga, AutoVolt te da lo que necesitas.</p>
+        <h2>Una solución para cada necesidad</h2>
+        <p>Pon cargadores en tu sitio sin invertir, monta tu propio negocio de carga, o simplemente carga tu vehículo. Elige tu camino.</p>
       </div>
       <div class="audience">
         <article class="audience__card">
-          <span class="audience__tag">Para tu conjunto u hotel</span>
+          <span class="audience__tag">Conjuntos y hoteles</span>
           <h3>Cargadores sin invertir un peso</h3>
           <p>Ponemos toda la infraestructura en tu parqueadero comunal sin costo para la copropiedad. Nosotros operamos, y el conjunto elige: un ingreso por cada carga o energía más barata para los residentes.</p>
           <a href="cargadores-conjuntos-residenciales.html" class="btn btn--primary">Ver cómo funciona</a>
         </article>
         <article class="audience__card">
-          <span class="audience__tag">Para centros comerciales</span>
+          <span class="audience__tag">Centros comerciales</span>
           <h3>Monetiza tu parqueadero</h3>
           <p>Tú tienes el espacio y la conexión; nosotros colocamos y operamos la carga rápida. Recibes una comisión del 7,5% al 20% sobre el ingreso neto.</p>
           <a href="cargadores-centros-comerciales.html" class="btn btn--primary">Ver cómo funciona</a>
         </article>
         <article class="audience__card">
-          <span class="audience__tag">Para conductores</span>
+          <span class="audience__tag">Empresas y operadores</span>
+          <h3>Monta tu negocio de carga</h3>
+          <p>Importamos el hardware, lo instalamos y lo dejamos operando sobre nuestra plataforma con tu marca. Una línea o el paquete llave en mano.</p>
+          <a href="soluciones-para-empresas.html" class="btn btn--ghost">Ver soluciones</a>
+        </article>
+        <article class="audience__card">
+          <span class="audience__tag">Conductores</span>
           <h3>Carga tu eléctrico sin complicaciones</h3>
           <p>Encuentra cargadores cerca de ti, inicia con un escaneo, paga desde tu billetera y lleva el control de tu energía. Todo desde una app.</p>
           <a href="#conductores" class="btn btn--ghost">Ver la app</a>
         </article>
-        <article class="audience__card">
-          <span class="audience__tag">Para empresas</span>
-          <h3>Monta tu operación de carga</h3>
-          <p>Importamos el hardware, lo instalamos y lo dejamos operando sobre nuestra plataforma con tu marca. Una línea o el paquete llave en mano.</p>
-          <a href="#empresas" class="btn btn--ghost">Ver soluciones</a>
-        </article>
       </div>
     </section>
 
-    <!-- ── Conductores: funciones de la app ─────────────────────────── -->
+    <!-- ── Conductores: la app ──────────────────────────────────────── -->
     <section id="conductores" class="section section--alt">
       <div class="section__head">
-        <h2>Todo lo que necesitas para cargar</h2>
+        <h2>Para conductores: carga sin complicaciones</h2>
         <p>Diseñada para que recargar tu vehículo sea tan simple como llenar el tanque — pero más inteligente.</p>
       </div>
       <div class="grid grid--3">
@@ -165,92 +165,44 @@
       </div>
     </section>
 
-    <!-- ── Cómo funciona ────────────────────────────────────────────── -->
-    <section id="como-funciona" class="section">
-      <div class="section__head">
-        <h2>Cargar en 3 pasos</h2>
-        <p>Desde que llegas a la estación hasta que sigues tu camino.</p>
-      </div>
-      <div class="grid grid--3 steps">
-        <article class="step">
-          <span class="step__num">1</span>
-          <h3>Encuentra</h3>
-          <p>Abre la app y elige el cargador disponible más cercano.</p>
-        </article>
-        <article class="step">
-          <span class="step__num">2</span>
-          <h3>Escanea y carga</h3>
-          <p>Escanea el QR del cargador y la sesión inicia al instante.</p>
-        </article>
-        <article class="step">
-          <span class="step__num">3</span>
-          <h3>Paga y listo</h3>
-          <p>Al terminar, el cobro se hace solo. Revisa tu recibo y continúa.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ── Empresas: líneas de servicio ─────────────────────────────── -->
-    <section id="empresas" class="section section--alt">
-      <div class="section__head">
-        <h2>Soluciones para empresas y operadores</h2>
-        <p>Contrata una línea, dos o el paquete completo. Tú decides hasta dónde llegamos: solo el equipo, la instalación, o tu operación montada de cero y corriendo con tu marca.</p>
-      </div>
-      <div class="grid grid--3">
-        <article class="card card--service">
-          <div class="card__icon">📦</div>
-          <span class="card__step">Línea 1</span>
-          <h3>Importación de hardware</h3>
-          <p>Traemos cargadores EV con todo el expediente de comercio exterior y postventa.</p>
-          <ul class="feature-list">
-            <li>Cargadores DC (CCS2) y AC Tipo 2</li>
-            <li>Nacionalización y comercio exterior</li>
-            <li>Acompañamiento RETIE / SIC</li>
-            <li>Garantía y repuestos</li>
-          </ul>
-        </article>
-        <article class="card card--service">
-          <div class="card__icon">🔧</div>
-          <span class="card__step">Línea 2</span>
-          <h3>Instalación y puesta en marcha</h3>
-          <p>Montaje físico y eléctrico, certificación y conexión real a la plataforma.</p>
-          <ul class="feature-list">
-            <li>Obra eléctrica y montaje</li>
-            <li>Cumplimiento RETIE / SIC</li>
-            <li>Puesta en marcha OCPP por conector</li>
-            <li>Validación con medición y balanceo</li>
-          </ul>
-        </article>
-        <article class="card card--service">
-          <div class="card__icon">🖥️</div>
-          <span class="card__step">Línea 3</span>
-          <h3>Plataforma multioperador</h3>
-          <p>Opera sobre la plataforma AutoVolt con tu marca, sin construir software.</p>
-          <ul class="feature-list">
-            <li>Panel de operación y reportes</li>
-            <li>App del conductor y billetera</li>
-            <li>Marca propia (white-label)</li>
-            <li>Recaudo y liquidación por uso</li>
-          </ul>
-          <a href="software-para-electrolineras.html" class="btn btn--ghost" style="margin-top:20px;">Ver software para electrolineras →</a>
-        </article>
-      </div>
-
-      <div class="cta-band" style="margin-top:40px;">
-        <div class="cta-band__text">
-          <h3>Paquete llave en mano</h3>
-          <p>Importación + instalación + plataforma. Te dejamos los cargadores importados, certificados, instalados y operando con tu marca — y tu negocio listo para cobrar.</p>
+    <!-- ── Descargar app ────────────────────────────────────────────── -->
+    <section id="descargar" class="section download">
+      <div class="download__inner">
+        <h2>Lleva AutoVolt en tu bolsillo</h2>
+        <p>Descarga la app y empieza a cargar de forma inteligente hoy mismo.</p>
+        <div class="download__badges">
+          <span class="store store--disabled" aria-label="Próximamente en Google Play" role="img">
+            <svg class="store__icon" viewBox="0 0 512 512" aria-hidden="true">
+              <path fill="#EA4335" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1z"/>
+              <path fill="#4285F4" d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256z"/>
+              <path fill="#FBBC04" d="M472.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8z"/>
+              <path fill="#34A853" d="M104.6 499l280.8-161.2-60.1-60.1z"/>
+            </svg>
+            <span class="store__text">
+              <span class="store__small">Próximamente en</span>
+              <span class="store__big">Google Play</span>
+            </span>
+          </span>
+          <span class="store store--disabled" aria-label="Próximamente en App Store" role="img">
+            <svg class="store__icon" viewBox="0 0 384 512" aria-hidden="true">
+              <path fill="#FFFFFF" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+            </svg>
+            <span class="store__text">
+              <span class="store__small">Próximamente en</span>
+              <span class="store__big">App Store</span>
+            </span>
+          </span>
         </div>
-        <a href="#contacto" class="btn btn--primary btn--lg">Solicita una cotización</a>
+        <p class="download__note">¿Aún no está publicada? Escríbenos a <a href="mailto:gerencia@autovoltenergy.net">gerencia@autovoltenergy.net</a> y te avisamos en el lanzamiento.</p>
       </div>
     </section>
 
-    <!-- ── Plataforma / qué es AutoVolt ──────────────────────────────── -->
+    <!-- ── Plataforma / por qué AutoVolt ─────────────────────────────── -->
     <section id="plataforma" class="section">
       <div class="section__head">
-        <p class="platform__kicker">Tecnología propia</p>
+        <p class="platform__kicker">Por qué AutoVolt</p>
         <h2>Una plataforma de carga construida en casa</h2>
-        <p>AutoVolt opera su propio sistema central sobre OCPP 1.6-J, el estándar abierto de la industria. Hardware, software y operación bajo un mismo techo.</p>
+        <p>AutoVolt opera su propio sistema central sobre OCPP 1.6-J, el estándar abierto de la industria. Hardware, software y operación bajo un mismo techo, con soporte local.</p>
       </div>
       <div class="platform">
         <div class="platform__item">
@@ -272,56 +224,20 @@
       </div>
     </section>
 
-    <!-- ── Descargar ────────────────────────────────────────────────── -->
-    <section id="descargar" class="section download">
-      <div class="download__inner">
-        <h2>Lleva AutoVolt en tu bolsillo</h2>
-        <p>Descarga la app y empieza a cargar de forma inteligente hoy mismo.</p>
-        <div class="download__badges">
-          <a href="#" class="store" aria-label="Disponible en Google Play">
-            <svg class="store__icon" viewBox="0 0 512 512" aria-hidden="true">
-              <path fill="#EA4335" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1z"/>
-              <path fill="#4285F4" d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256z"/>
-              <path fill="#FBBC04" d="M472.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8z"/>
-              <path fill="#34A853" d="M104.6 499l280.8-161.2-60.1-60.1z"/>
-            </svg>
-            <span class="store__text">
-              <span class="store__small">Disponible en</span>
-              <span class="store__big">Google Play</span>
-            </span>
-          </a>
-          <a href="#" class="store" aria-label="Próximamente en App Store">
-            <svg class="store__icon" viewBox="0 0 384 512" aria-hidden="true">
-              <path fill="#FFFFFF" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-            </svg>
-            <span class="store__text">
-              <span class="store__small">Próximamente en</span>
-              <span class="store__big">App Store</span>
-            </span>
-          </a>
-        </div>
-        <p class="download__note">¿Aún no está publicada? Escríbenos a <a href="mailto:gerencia@autovoltenergy.net">gerencia@autovoltenergy.net</a> y te avisamos en el lanzamiento.</p>
-      </div>
-    </section>
-
     <!-- ── Contacto ─────────────────────────────────────────────────── -->
     <section id="contacto" class="section section--alt">
       <div class="section__head">
         <h2>Hablemos</h2>
-        <p>¿Tienes una flota, una estación o una idea? Estamos para ayudarte.</p>
+        <p>¿Tienes un conjunto, un centro comercial, una flota o una idea? Estamos para ayudarte.</p>
       </div>
       <div class="contact">
-        <a class="contact__card" href="mailto:gerencia@autovoltenergy.net?subject=Información%20general">
-          <span class="contact__label">Información general</span>
+        <a class="contact__card" href="mailto:gerencia@autovoltenergy.net">
+          <span class="contact__label">Correo</span>
           <span class="contact__value">gerencia@autovoltenergy.net</span>
         </a>
-        <a class="contact__card" href="mailto:gerencia@autovoltenergy.net?subject=Soporte">
-          <span class="contact__label">Soporte</span>
-          <span class="contact__value">gerencia@autovoltenergy.net</span>
-        </a>
-        <a class="contact__card" href="mailto:gerencia@autovoltenergy.net?subject=Negocios%20y%20alianzas">
-          <span class="contact__label">Negocios y alianzas</span>
-          <span class="contact__value">gerencia@autovoltenergy.net</span>
+        <a class="contact__card" href="https://wa.me/573144907237?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AutoVolt%20Energy" target="_blank" rel="noopener">
+          <span class="contact__label">WhatsApp</span>
+          <span class="contact__value">+57 314 490 7237</span>
         </a>
       </div>
     </section>
@@ -333,8 +249,8 @@
       <img src="assets/logo.png" alt="AutoVolt Energy" class="footer__logo" />
       <p class="footer__tag">Potencia para cada kilómetro.</p>
       <nav class="footer__links">
-        <a href="#conductores">Conductores</a>
-        <a href="#empresas">Empresas</a>
+        <a href="soluciones-para-empresas.html">Empresas</a>
+        <a href="software-para-electrolineras.html">Software</a>
         <a href="#contacto">Contacto</a>
         <a href="terminos.html">Términos</a>
         <a href="privacidad.html">Privacidad</a>
