@@ -83,6 +83,7 @@ a { color: inherit; text-decoration: none; }
   transition: color .15s ease;
 }
 .nav__links > a:hover { color: var(--charge-green); }
+.nav__links > a.is-active { color: var(--charge-green); font-weight: 600; }
 
 /* ── Dropdown "Soluciones" ─────────────────────────────────────────── */
 .nav__dropdown { position: relative; }

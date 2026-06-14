@@ -60,9 +60,11 @@
       <div class="nav__dropdown">
         <button type="button" class="nav__dropbtn" aria-haspopup="true">Soluciones <span class="caret">▾</span></button>
         <div class="nav__menu">
-          <a href="cargadores-conjuntos-residenciales.html">Conjuntos y hoteles</a>
-          <a href="cargadores-centros-comerciales.html">Centros comerciales</a>
+          <a href="cargadores-conjuntos-residenciales.html">Conjuntos residenciales</a>
+          <a href="cargadores-centros-comerciales.html">Centros comerciales y zonas de alta afluencia vial</a>
+          <a href="cargadores-hoteles-hospitales.html">Hoteles y hospitales</a>
           <a href="soluciones-para-empresas.html">Empresas y operadores</a>
+          <a href="software-para-electrolineras.html">Software para electrolineras</a>
         </div>
       </div>
       <a href="#conductores">Conductores</a>
@@ -78,11 +80,12 @@
       <div class="hero__content">
         <h1>Potencia para <span class="grad">cada kilómetro</span>.</h1>
         <p class="hero__sub">
-          AutoVolt Energy es un operador de carga (CPO) colombiano. Diseñamos, instalamos y
-          operamos cargadores en ubicaciones viables como conjuntos, hoteles y centros comerciales; ofrecemos
-          soluciones de hardware y software para empresas y emprendedores que quieren
-          montar su propio negocio de carga; y le damos a los conductores una app
-          para encontrar, cargar y pagar.
+          AutoVolt Energy es una empresa dedicada a la instalación de puntos de carga para
+          vehículos eléctricos e híbridos enchufables. Operamos cargadores en conjuntos
+          residenciales, hoteles, centros comerciales y zonas de alta afluencia vial, con
+          proyectos sin inversión inicial para el propietario; importamos e instalamos el
+          hardware; y licenciamos nuestra plataforma de software para que empresas y operadores
+          monten su propia red de carga con su marca.
         </p>
         <div class="hero__actions">
           <a href="#soluciones" class="btn btn--primary btn--lg">Ver soluciones</a>
@@ -99,7 +102,7 @@
       </div>
       <div class="audience">
         <article class="audience__card">
-          <span class="audience__tag">Conjuntos y hoteles</span>
+          <span class="audience__tag">Conjuntos residenciales</span>
           <h3>Cargadores sin inversión inicial</h3>
           <p>En ubicaciones viables, ponemos la infraestructura en tu parqueadero comunal sin inversión inicial para la copropiedad. Nosotros operamos, y el conjunto puede elegir entre participación de ingresos o una tarifa preferencial para residentes.</p>
           <a href="cargadores-conjuntos-residenciales.html" class="btn btn--primary">Ver cómo funciona</a>
@@ -111,10 +114,22 @@
           <a href="cargadores-centros-comerciales.html" class="btn btn--primary">Ver cómo funciona</a>
         </article>
         <article class="audience__card">
+          <span class="audience__tag">Hoteles y hospitales</span>
+          <h3>Carga para huéspedes y visitantes</h3>
+          <p>Suma carga eléctrica como amenidad: carga rápida DC para visitantes y personal, o carga nocturna para tus huéspedes. Evaluamos, instalamos y operamos bajo modelo anfitrión, con comisión por contrato.</p>
+          <a href="cargadores-hoteles-hospitales.html" class="btn btn--primary">Ver cómo funciona</a>
+        </article>
+        <article class="audience__card">
           <span class="audience__tag">Empresas y operadores</span>
           <h3>Monta tu negocio de carga</h3>
           <p>Importamos hardware, ejecutamos instalación y conectamos operación sobre nuestra plataforma con tu marca, según alcance técnico, regulatorio y contractual.</p>
           <a href="soluciones-para-empresas.html" class="btn btn--ghost">Ver soluciones</a>
+        </article>
+        <article class="audience__card">
+          <span class="audience__tag">Operadores / Software</span>
+          <h3>Opera tu electrolinera con tu marca</h3>
+          <p>¿Ya tienes cargadores o un proyecto? Licencia nuestra plataforma CPO sobre OCPP 1.6-J: panel de operación, billetera, cobro por kWh y app para tus conductores. Tú defines el precio; nosotros ponemos la tecnología.</p>
+          <a href="software-para-electrolineras.html" class="btn btn--primary">Conocer el software</a>
         </article>
         <article class="audience__card">
           <span class="audience__tag">Conductores</span>
@@ -197,33 +212,6 @@
       </div>
     </section>
 
-    <!-- ── Plataforma / por qué AutoVolt ─────────────────────────────── -->
-    <section id="plataforma" class="section">
-      <div class="section__head">
-        <p class="platform__kicker">Por qué AutoVolt</p>
-        <h2>Una plataforma de carga construida en casa</h2>
-        <p>AutoVolt opera su propio sistema central sobre OCPP 1.6-J, el estándar abierto de la industria. Hardware, software y operación bajo un mismo techo, con soporte local.</p>
-      </div>
-      <div class="platform">
-        <div class="platform__item">
-          <strong>Central OCPP 1.6-J</strong>
-          <span>Gestión de cargadores, sesiones, medición y comandos remotos en tiempo real.</span>
-        </div>
-        <div class="platform__item">
-          <strong>Billing y billetera</strong>
-          <span>Cobro por kWh, billetera prepago y recarga con aprobación, denominado en COP.</span>
-        </div>
-        <div class="platform__item">
-          <strong>Panel de operación</strong>
-          <span>KPIs, cargadores, sesiones, usuarios, tarifas, costos y ocupación.</span>
-        </div>
-        <div class="platform__item">
-          <strong>App del conductor</strong>
-          <span>Mapa, QR, sesión en vivo, historial, billetera, soporte y notificaciones.</span>
-        </div>
-      </div>
-    </section>
-
     <!-- ── Contacto ─────────────────────────────────────────────────── -->
     <section id="contacto" class="section section--alt">
       <div class="section__head">
@@ -249,8 +237,6 @@
       <img src="assets/logo.png" alt="AutoVolt Energy" class="footer__logo" />
       <p class="footer__tag">Potencia para cada kilómetro.</p>
       <nav class="footer__links">
-        <a href="soluciones-para-empresas.html">Empresas</a>
-        <a href="software-para-electrolineras.html">Software</a>
         <a href="#contacto">Contacto</a>
         <a href="terminos.html">Términos</a>
         <a href="privacidad.html">Privacidad</a>
