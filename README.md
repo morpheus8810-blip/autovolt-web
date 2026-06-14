@@ -106,8 +106,8 @@ O abre `index.html` directamente en el navegador.
 1. Publica el contenido de `Web/` como raíz del repositorio de GitHub Pages (p. ej. `autovolt-web`) y haz push a la rama `main`.
 2. En **Settings → Pages**: *Source* = **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
 3. El archivo `CNAME` ya fija el dominio `www.autovoltenergy.net`. En **Settings → Pages → Custom domain** debe quedar verificado.
-4. En Squarespace DNS, crea un registro **CNAME**: `www` → `morpheus8810-blip.github.io`.
-5. Activa **Enforce HTTPS** una vez propague el dominio.
+4. En Squarespace DNS: registro **CNAME** `www` → `morpheus8810-blip.github.io`, y **4 registros A** del apex (host `@`) → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (para que el dominio sin `www` también resuelva y GitHub lo redirija a `www`).
+5. Activa **Enforce HTTPS** (Settings → Pages) una vez emitido el certificado, para forzar `http → https`. Si el certificado no se emite, borra y vuelve a poner el *Custom domain* para re-disparar la emisión.
 
 Cada push a `main` republica el sitio automáticamente. No depende de `Operativo/` ni del deploy a Hetzner.
 
@@ -119,10 +119,11 @@ Cada push a `main` republica el sitio automáticamente. No depende de `Operativo
 | Rama | `main` |
 | `CNAME` | `www.autovoltenergy.net` |
 | GitHub Pages | `morpheus8810-blip.github.io/autovolt-web` redirige al dominio personalizado |
-| DNS actual | `www.autovoltenergy.net` resuelve a `morpheus8810-blip.github.io` |
-| DNS pendiente | Ninguno para `www` |
+| DNS actual | `www` (CNAME → `morpheus8810-blip.github.io`) y apex `autovoltenergy.net` (4 registros A → `185.199.108–111.153`) resuelven a GitHub Pages |
+| DNS pendiente | Ninguno |
+| Certificado TLS | Emitido por Let's Encrypt; cubre `autovoltenergy.net` y `www.autovoltenergy.net` |
 | HTTPS | Activo: `https://www.autovoltenergy.net/` responde `200 OK` |
-| Enforce HTTPS | Pendiente: `http://www.autovoltenergy.net/` aún responde `200 OK` sin redirigir |
+| Enforce HTTPS | **Activo**: `http://` redirige `301` a `https://`; el apex `autovoltenergy.net` redirige a `https://www.autovoltenergy.net/` |
 
 ### Estado SEO 2026-06-14
 
