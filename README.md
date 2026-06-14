@@ -97,6 +97,8 @@ Cada push a `main` republica el sitio automáticamente. No depende de `Operativo
   cobrar sesiones o instalar estaciones de acceso público.
 - **Placeholders legales:** `[NIT]`, `[DIRECCIÓN COMERCIAL]`, `[CIUDAD]` y `[FECHA DE VIGENCIA]`
   siguen pendientes en `terminos.html` y `privacidad.html` hasta tener datos oficiales.
-- **Search Console / analítica:** dar de alta el sitio en Google Search Console, enviar `sitemap.xml`,
-  crear el Perfil de Empresa de Google y añadir analítica solo después de definir aviso/capa de cookies si aplica.
+- **SEO:** dar de alta el sitio en Google Search Console, enviar `sitemap.xml`
+  y crear/actualizar el Perfil de Empresa de Google.
+- **Analítica:** no instalar scripts de tracking/cookies por ahora. Usar Search Console primero;
+  GA4/Meta Pixel/Hotjar/Plausible quedan para después de aprobar privacidad y aviso/capa de cookies si aplica.
 - **Badges de tiendas:** Google Play / App Store quedan como elementos visuales no clicables hasta publicar las apps.
