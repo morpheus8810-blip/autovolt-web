@@ -28,9 +28,9 @@ Producción: **https://www.autovoltenergy.net** (GitHub Pages)
 | Archivo | Propósito |
 |---|---|
 | `index.html` | Landing principal (conductores, conjuntos, centros comerciales, empresas, plataforma, contacto) |
-| `cargadores-conjuntos-residenciales.html` | Modelo anfitrión: CPO instala sin costo; la copropiedad elige ingreso o energía más barata. Foco carga lenta |
-| `cargadores-centros-comerciales.html` | Modelo anfitrión: el sitio aporta espacio y conexión; AutoVolt el punto de carga rápida; comisión 7,5%–20% sobre neto |
-| `soluciones-para-empresas.html` | Página comercial: 3 líneas para empresas/operadores (importación, instalación, plataforma) + llave en mano |
+| `cargadores-conjuntos-residenciales.html` | Modelo anfitrión sujeto a prefactibilidad: la copropiedad puede elegir participación de ingresos o tarifa preferencial. Foco carga lenta |
+| `cargadores-centros-comerciales.html` | Modelo anfitrión para sitios de alto flujo: espacio + conexión; comisión definida por contrato |
+| `soluciones-para-empresas.html` | Página comercial: 3 líneas para empresas/operadores (importación, instalación, plataforma) + proyecto integral sujeto a alcance |
 | `software-para-electrolineras.html` | Página comercial: software/plataforma CPO (keyword principal) |
 | `como-poner-cargadores-en-mi-conjunto.html` | Guía SEO (top-of-funnel) que enlaza a la página comercial de conjuntos |
 | `terminos.html` | Términos y Condiciones |
@@ -53,6 +53,30 @@ Dominio canónico: **`https://www.autovoltenergy.net`** (todas las `<link rel="c
   y `FAQPage` en las páginas comerciales; `Article` en la guía.
 - **Conversión:** botón flotante de WhatsApp (`+57 314 490 7237`) en todas las páginas + CTA por WhatsApp/correo.
 - **Contacto:** buzón único `gerencia@autovoltenergy.net`.
+
+## Contenido comercial (promesas defendibles)
+
+Revisión final de contenido (2026-06-14): todas las páginas comerciales se redactaron
+para que **ninguna promesa quede sin respaldo**. El principio editorial es que cada
+afirmación de modelo, ingreso o instalación sea **defendible** ante un comité de
+copropiedad, un centro comercial o una empresa.
+
+- **Todo va condicionado a prefactibilidad** técnica, eléctrica, económica y contractual.
+  No se promete instalación ni rentabilidad sin evaluar capacidad, flujo, costos e inversión.
+- **Sin cifras de comisión fijas en el sitio:** el porcentaje y la liquidación se definen
+  **por contrato** según flujo, costos de energía, inversión y condiciones del sitio
+  (se eliminó el rango `7,5%–20%` que antes aparecía publicado).
+- **Conjuntos/hoteles:** el modelo anfitrión busca cero inversión inicial *en proyectos
+  aprobados*; la copropiedad puede elegir participación de ingresos **o** tarifa preferencial
+  para residentes, sujeto a costos de energía y contrato.
+- **Centros comerciales:** se enmarca como modelo a comisión definida por contrato, con
+  carga rápida solo donde la capacidad y el flujo lo justifiquen.
+- **Empresas/operadores:** las tres líneas (importación, instalación, plataforma) y el
+  proyecto integral quedan sujetos a alcance, permisos y compatibilidad (p. ej. OCPP 1.6-J).
+
+Al editar estas páginas, mantener este criterio: preferir verbos como *evaluamos, cotizamos,
+proponemos* y condicionantes (*sujeto a, según contrato, cuando el flujo lo justifique*)
+en lugar de promesas absolutas o cifras cerradas.
 
 ## Desarrollo local
 
