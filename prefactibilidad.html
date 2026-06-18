@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicita tu evaluación de prefactibilidad | AutoVolt Energy</title>
+  <meta name="description" content="Cuéntanos sobre tu sitio en 1 minuto y evaluamos si es viable poner cargadores para vehículos eléctricos: conjuntos, hoteles, hospitales, centros comerciales y empresas en Colombia." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.autovoltenergy.net/prefactibilidad.html" />
+
+  <meta property="og:title" content="Solicita tu evaluación de prefactibilidad — AutoVolt Energy" />
+  <meta property="og:description" content="Responde unas preguntas rápidas y evaluamos si tu sitio es viable para cargadores eléctricos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.autovoltenergy.net/prefactibilidad.html" />
+  <meta property="og:image" content="https://www.autovoltenergy.net/assets/logo_4k.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/logo.png" alt="AutoVolt Energy" />
+    </a>
+    <nav class="nav__links">
+      <div class="nav__dropdown">
+        <button type="button" class="nav__dropbtn" aria-haspopup="true">Soluciones <span class="caret">▾</span></button>
+        <div class="nav__menu">
+          <a href="cargadores-conjuntos-residenciales.html">Conjuntos residenciales</a>
+          <a href="cargadores-centros-comerciales.html">Centros comerciales y zonas de alta afluencia vial</a>
+          <a href="cargadores-hoteles-hospitales.html">Hoteles y hospitales</a>
+          <a href="soluciones-para-empresas.html">Empresas y operadores</a>
+          <a href="software-para-electrolineras.html">Software para electrolineras</a>
+        </div>
+      </div>
+      <a href="prefactibilidad.html" class="is-active">Solicita tu evaluación</a>
+      <a href="index.html#conductores">Conductores</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a href="#formulario" class="btn btn--primary nav__cta">Solicitar evaluación</a>
+  </header>
+
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__content">
+        <span class="badge">⚡ Evaluación gratuita · Colombia</span>
+        <h1>¿Tu sitio es viable para <span class="grad">cargadores eléctricos</span>?</h1>
+        <p class="hero__sub">
+          Respóndenos unas preguntas rápidas sobre tu conjunto, hotel, centro comercial
+          o empresa. Con eso hacemos una primera evaluación de prefactibilidad y te
+          contactamos para decirte si el proyecto es viable y bajo qué modelo.
+        </p>
+        <div class="hero__actions">
+          <a href="#formulario" class="btn btn--primary btn--lg">Empezar ahora</a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>1 minuto</strong><span>en responder</span></div>
+          <div><strong>Sin costo</strong><span>ni compromiso</span></div>
+          <div><strong>Te contactamos</strong><span>por WhatsApp</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Formulario ────────────────────────────────────────────────── -->
+    <section id="formulario" class="section">
+      <div class="section__head">
+        <h2>Cuéntanos sobre tu sitio</h2>
+        <p>Entre más datos nos des, más rápida y precisa será la evaluación. Si no sabes algo, déjalo en "No sé" y lo revisamos juntos.</p>
+      </div>
+
+      <form class="form" id="pf-form" novalidate>
+        <p class="form__legend">El sitio</p>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="tipo">Tipo de sitio <span class="req">*</span></label>
+            <select id="tipo" name="tipo" required>
+              <option value="" selected disabled>Selecciona…</option>
+              <option>Conjunto residencial</option>
+              <option>Hotel u hospital</option>
+              <option>Centro comercial o zona de alta afluencia vial</option>
+              <option>Empresa u operador (quiero montar mi negocio)</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="rol">Tu rol <span class="req">*</span></label>
+            <select id="rol" name="rol" required>
+              <option value="" selected disabled>Selecciona…</option>
+              <option>Administrador/a o consejo</option>
+              <option>Propietario/a del inmueble o negocio</option>
+              <option>Residente</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="sitio">Nombre del sitio</label>
+            <input type="text" id="sitio" name="sitio" placeholder="Ej. Conjunto Los Cerezos" />
+          </div>
+          <div class="form__group">
+            <label for="ciudad">Ciudad <span class="req">*</span></label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ej. Bogotá" required />
+          </div>
+        </div>
+
+        <p class="form__legend">Prefactibilidad rápida</p>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="cupos">Cupos de parqueo para cargadores</label>
+            <select id="cupos" name="cupos">
+              <option value="" selected disabled>Selecciona…</option>
+              <option>1 a 2</option>
+              <option>3 a 5</option>
+              <option>6 a 10</option>
+              <option>Más de 10</option>
+              <option>No sé</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="carga">Tipo de carga que te interesa</label>
+            <select id="carga" name="carga">
+              <option value="" selected disabled>Selecciona…</option>
+              <option>Carga lenta AC (residencial / nocturna)</option>
+              <option>Carga rápida DC (público / comercial)</option>
+              <option>No sé, asesórenme</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="tablero">¿Hay un tablero eléctrico cerca del parqueadero?</label>
+            <select id="tablero" name="tablero">
+              <option value="" selected disabled>Selecciona…</option>
+              <option>Sí, hay uno cerca</option>
+              <option>No estoy seguro</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="capacidad">¿Sabes si hay capacidad eléctrica disponible?</label>
+            <select id="capacidad" name="capacidad">
+              <option value="" selected disabled>Selecciona…</option>
+              <option>Sí, sobra capacidad</option>
+              <option>No estoy seguro</option>
+              <option>No, está al límite</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="form__legend">Tus datos de contacto</p>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="nombre">Nombre <span class="req">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form__group">
+            <label for="telefono">WhatsApp / teléfono <span class="req">*</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej. 300 123 4567" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="correo">Correo (opcional)</label>
+          <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" />
+        </div>
+        <div class="form__group">
+          <label for="comentario">¿Algo más que debamos saber? (opcional)</label>
+          <textarea id="comentario" name="comentario" placeholder="Cuéntanos cualquier detalle del sitio o tu proyecto."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg form__submit">Enviar por WhatsApp</button>
+        <p class="form__note" id="pf-status">
+          Al enviar se abrirá WhatsApp con tu solicitud lista para mandar.
+          ¿Prefieres correo? <a href="#" id="pf-mail">Envíalo a ventas@autovoltenergy.net</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <img src="assets/logo.png" alt="AutoVolt Energy" class="footer__logo" />
+      <p class="footer__tag">Potencia para cada kilómetro.</p>
+      <nav class="footer__links">
+        <a href="index.html#contacto">Contacto</a>
+        <a href="terminos.html">Términos</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> AutoVolt Energy S.A.S. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="wa-fab" href="https://wa.me/573144907237?text=Hola%2C%20quiero%20una%20evaluaci%C3%B3n%20de%20prefactibilidad%20para%20cargadores" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.515 5.26l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      var WA_NUMBER = '573144907237';
+      var MAIL = 'ventas@autovoltenergy.net';
+      var form = document.getElementById('pf-form');
+      var status = document.getElementById('pf-status');
+
+      // Construye el resumen estructurado a partir de los campos.
+      function buildMessage() {
+        function val(id) {
+          var el = document.getElementById(id);
+          return el && el.value ? el.value.trim() : '';
+        }
+        var lines = [
+          '*Solicitud de prefactibilidad — AutoVolt*',
+          '',
+          'Tipo de sitio: ' + (val('tipo') || '—'),
+          'Rol del contacto: ' + (val('rol') || '—'),
+          'Nombre del sitio: ' + (val('sitio') || '—'),
+          'Ciudad: ' + (val('ciudad') || '—'),
+          'Cupos para cargadores: ' + (val('cupos') || '—'),
+          'Tipo de carga: ' + (val('carga') || '—'),
+          'Tablero cercano: ' + (val('tablero') || '—'),
+          'Capacidad eléctrica: ' + (val('capacidad') || '—'),
+          '',
+          'Contacto: ' + (val('nombre') || '—'),
+          'WhatsApp/teléfono: ' + (val('telefono') || '—'),
+          'Correo: ' + (val('correo') || '—')
+        ];
+        var coment = val('comentario');
+        if (coment) { lines.push('', 'Comentario: ' + coment); }
+        return lines.join('\n');
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var text = encodeURIComponent(buildMessage());
+        var url = 'https://wa.me/' + WA_NUMBER + '?text=' + text;
+        window.open(url, '_blank', 'noopener');
+        status.innerHTML = '¡Listo! Abrimos WhatsApp con tu solicitud. Si no se abrió, ' +
+          '<a href="' + url + '" target="_blank" rel="noopener">toca aquí</a>.';
+      });
+
+      // Alternativa por correo: usa el mismo resumen.
+      document.getElementById('pf-mail').addEventListener('click', function (e) {
+        e.preventDefault();
+        var subject = encodeURIComponent('Solicitud de prefactibilidad — ' +
+          (document.getElementById('ciudad').value || 'AutoVolt'));
+        var body = encodeURIComponent(buildMessage());
+        window.location.href = 'mailto:' + MAIL + '?subject=' + subject + '&body=' + body;
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -53,7 +53,10 @@ Dominio canónico: **`https://www.autovoltenergy.net`** (todas las `<link rel="c
 - **Datos estructurados (JSON-LD):** `Organization` (home); `Service`, `BreadcrumbList`
   y `FAQPage` en las páginas comerciales; `Article` en la guía.
 - **Conversión:** botón flotante de WhatsApp (`+57 314 490 7237`) en todas las páginas + CTA por WhatsApp/correo.
-- **Contacto:** buzón único `gerencia@autovoltenergy.net`.
+- **Contacto:** correos formales `contacto@` (atención general), `ventas@` (páginas comerciales),
+  `privacidad@` y `legal@` (páginas legales). Además existen `facturacion@` (facturación DIAN) y
+  `no-responder@` (correos automáticos del sistema), aún no usados en la web pero ya creados.
+  Todos son alias que redirigen al buzón operativo `gerencia@autovoltenergy.net`.
 
 ## Contenido comercial (promesas defendibles)
 
