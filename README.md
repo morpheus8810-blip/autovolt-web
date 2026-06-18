@@ -50,8 +50,9 @@ Dominio canónico: **`https://www.autovoltenergy.net`** (todas las `<link rel="c
 `og:url` y el `sitemap.xml` apuntan ahí).
 
 - **Estrategia:** una página por intención de búsqueda (conjuntos residenciales, centros comerciales, hoteles y hospitales, empresas/operadores, software).
-- **Datos estructurados (JSON-LD):** `Organization` (home); `Service`, `BreadcrumbList`
-  y `FAQPage` en las páginas comerciales; `Article` en la guía.
+- **Datos estructurados (JSON-LD):** `Organization` + `WebSite` (home); `Service`,
+  `BreadcrumbList` y `FAQPage` en las páginas comerciales; `BreadcrumbList` en
+  `prefactibilidad.html`; `Article` + `BreadcrumbList` + `FAQPage` en la guía.
 - **Conversión:** botón flotante de WhatsApp (`+57 314 490 7237`) en todas las páginas + CTA por WhatsApp/correo.
 - **Contacto:** correos formales `contacto@` (atención general), `ventas@` (páginas comerciales),
   `privacidad@` y `legal@` (páginas legales). Además existen `facturacion@` (facturación DIAN) y
@@ -128,16 +129,43 @@ Cada push a `main` republica el sitio automáticamente. No depende de `Operativo
 | HTTPS | Activo: `https://www.autovoltenergy.net/` responde `200 OK` |
 | Enforce HTTPS | **Activo**: `http://` redirige `301` a `https://`; el apex `autovoltenergy.net` redirige a `https://www.autovoltenergy.net/` |
 
-### Estado SEO 2026-06-14
+### Estado SEO 2026-06-18
 
 | Punto | Estado |
 |---|---|
 | Search Console | Propiedad verificada por archivo HTML |
 | Verificación | `google6258b155e64498e9.html` publicado en la raíz del sitio |
 | `robots.txt` | Activo y apunta a `https://www.autovoltenergy.net/sitemap.xml` |
-| `sitemap.xml` | Enviado y leído como correcto; 9 páginas (incluye hoteles y hospitales) |
+| `sitemap.xml` | Enviado y leído como correcto; 10 páginas (incluye hoteles y hospitales, y prefactibilidad) |
+| Datos estructurados | Completos en todas las páginas: home con `Organization` + `WebSite`; segmentos con `Service`/`BreadcrumbList`/`FAQPage`; `prefactibilidad` con `BreadcrumbList`; guía con `Article`/`FAQPage` (18 jun 2026) |
+| `meta keywords` | Presente en home, prefactibilidad y todas las páginas de segmento |
 | Analítica/cookies | Sin scripts de tracking por ahora |
 | Perfil de Empresa de Google | Pendiente. Crear como negocio virtual/área de servicio, sin dirección visible |
+
+### Plan de visibilidad (captación orgánica)
+
+> El SEO técnico **ya está sólido** (meta únicos, datos estructurados, sitemap, robots).
+> Lo que falta para **aparecer y vender** no es código: es autoridad, presencia local y
+> tiempo. El dominio es nuevo, así que estos pasos —en orden de impacto— son lo que mueve
+> la aguja. Ejecutar de arriba hacia abajo.
+
+1. **Perfil de Empresa de Google (máxima prioridad, sin código).** Es lo único que hace
+   aparecer en días (Maps + paquete local). Crear como negocio virtual/área de servicio,
+   sin dirección visible, con sitio web y WhatsApp `+57 314 490 7237`.
+2. **Indexación en Search Console.** Reenviar `sitemap.xml` y usar *Inspección de URL →
+   Solicitar indexación* en las 10 páginas; verificar que queden **indexadas** (no solo
+   enviadas) en la pestaña *Páginas*.
+3. **Contenido long-tail.** Replicar el modelo de `como-poner-cargadores-en-mi-conjunto.html`
+   con guías que respondan preguntas reales y poco competidas, p. ej.: cuánto cuesta instalar
+   un cargador en un conjunto, permisos en propiedad horizontal, requisitos RETIE de cargadores,
+   AC vs DC cuál elegir. Cada guía enlaza a su página comercial.
+4. **Backlinks / autoridad.** Conseguir menciones y enlaces desde directorios de movilidad
+   eléctrica de Colombia, cámaras de comercio, asociaciones (p. ej. ANDEMOS), prensa local y aliados.
+5. **(Opcional, pago) Google Ads.** Para aparecer de inmediato por keywords objetivo mientras
+   el posicionamiento orgánico madura.
+
+> Mantener la decisión de **no instalar analítica/cookies** hasta aprobar privacidad y la capa
+> de consentimiento (ver Pendientes).
 
 ## Pendientes
 
@@ -145,8 +173,9 @@ Cada push a `main` republica el sitio automáticamente. No depende de `Operativo
   cobrar sesiones o instalar estaciones de acceso público.
 - **Placeholders legales:** `[NIT]`, `[DIRECCIÓN COMERCIAL]`, `[CIUDAD]` y `[FECHA DE VIGENCIA]`
   siguen pendientes en `terminos.html` y `privacidad.html` hasta tener datos oficiales.
-- **SEO local:** crear/actualizar el Perfil de Empresa de Google como negocio virtual/área de servicio,
-  sin dirección visible hasta tener sede o estación pública real.
+- **Visibilidad / captación:** ejecutar el **Plan de visibilidad (captación orgánica)** de arriba
+  (Perfil de Empresa de Google → indexación → contenido long-tail → backlinks). El Perfil de Empresa
+  de Google va sin dirección visible hasta tener sede o estación pública real.
 - **Analítica:** no instalar scripts de tracking/cookies por ahora. Usar Search Console primero;
   GA4/Meta Pixel/Hotjar/Plausible quedan para después de aprobar privacidad y aviso/capa de cookies si aplica.
 - **Badges de tiendas:** Google Play / App Store quedan como elementos visuales no clicables hasta publicar las apps.
