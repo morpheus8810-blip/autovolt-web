@@ -61,10 +61,9 @@ Dominio canónico: **`https://www.autovoltenergy.net`** (todas las `<link rel="c
 
 ## Contenido comercial (promesas defendibles)
 
-Revisión final de contenido (2026-06-14): todas las páginas comerciales se redactaron
-para que **ninguna promesa quede sin respaldo**. El principio editorial es que cada
-afirmación de modelo, ingreso o instalación sea **defendible** ante un comité de
-copropiedad, un centro comercial o una empresa.
+Las páginas comerciales se redactaron para que **ninguna promesa quede sin respaldo**. El
+principio editorial es que cada afirmación de modelo, ingreso o instalación sea **defendible**
+ante un comité de copropiedad, un centro comercial o una empresa.
 
 - **Todo va condicionado a prefactibilidad** técnica, eléctrica, económica y contractual.
   No se promete instalación ni rentabilidad sin evaluar capacidad, flujo, costos e inversión.
@@ -116,32 +115,19 @@ O abre `index.html` directamente en el navegador.
 
 Cada push a `main` republica el sitio automáticamente. No depende de `Operativo/` ni del deploy a Hetzner.
 
-### Estado verificado 2026-06-14
+> **Estado de despliegue:** sitio en producción con **HTTPS forzado**. Repo
+> `morpheus8810-blip/autovolt-web` (rama `main`); apex `autovoltenergy.net` y `www` resuelven a
+> GitHub Pages (CNAME `www` → `morpheus8810-blip.github.io` + 4 registros A del apex a
+> `185.199.108–111.153`); certificado Let's Encrypt para ambos. El apex redirige a `https://www…`.
 
-| Punto | Estado |
-|---|---|
-| Repo remoto | `https://github.com/morpheus8810-blip/autovolt-web.git` |
-| Rama | `main` |
-| `CNAME` | `www.autovoltenergy.net` |
-| GitHub Pages | `morpheus8810-blip.github.io/autovolt-web` redirige al dominio personalizado |
-| DNS actual | `www` (CNAME → `morpheus8810-blip.github.io`) y apex `autovoltenergy.net` (4 registros A → `185.199.108–111.153`) resuelven a GitHub Pages |
-| DNS pendiente | Ninguno |
-| Certificado TLS | Emitido por Let's Encrypt; cubre `autovoltenergy.net` y `www.autovoltenergy.net` |
-| HTTPS | Activo: `https://www.autovoltenergy.net/` responde `200 OK` |
-| Enforce HTTPS | **Activo**: `http://` redirige `301` a `https://`; el apex `autovoltenergy.net` redirige a `https://www.autovoltenergy.net/` |
+### SEO técnico
 
-### Estado SEO 2026-06-18
-
-| Punto | Estado |
-|---|---|
-| Search Console | Propiedad verificada por archivo HTML |
-| Verificación | `google6258b155e64498e9.html` publicado en la raíz del sitio |
-| `robots.txt` | Activo y apunta a `https://www.autovoltenergy.net/sitemap.xml` |
-| `sitemap.xml` | Enviado y leído como correcto; 10 páginas (incluye hoteles y hospitales, y prefactibilidad) |
-| Datos estructurados | Completos en todas las páginas: home con `Organization` + `WebSite`; segmentos con `Service`/`BreadcrumbList`/`FAQPage`; `prefactibilidad` con `BreadcrumbList`; guía con `Article`/`FAQPage` (18 jun 2026) |
-| `meta keywords` | Presente en home, prefactibilidad y todas las páginas de segmento |
-| Analítica/cookies | Sin scripts de tracking por ahora |
-| Perfil de Empresa de Google | Pendiente. Crear como negocio virtual/área de servicio, sin dirección visible |
+Completo: meta/canónicos únicos por página, **datos estructurados JSON-LD** en todas (home con
+`Organization`+`WebSite`; segmentos con `Service`/`BreadcrumbList`/`FAQPage`; guía con
+`Article`/`FAQPage`), `sitemap.xml` (10 páginas) enviado y `robots.txt` apuntando a él, y **Search
+Console verificado** por archivo HTML (`google6258b155e64498e9.html`). Sin scripts de
+tracking/cookies por ahora. **Pendiente:** Perfil de Empresa de Google (negocio virtual/área de
+servicio, sin dirección visible).
 
 ### Plan de visibilidad (captación orgánica)
 
