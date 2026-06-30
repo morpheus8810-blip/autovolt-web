@@ -27,7 +27,7 @@
     "@type": "Service",
     "serviceType": "Software para electrolineras (plataforma CPO)",
     "name": "Plataforma de software para electrolineras AutoVolt Energy",
-    "description": "Software CPO para operar una red de carga de vehículos eléctricos sobre OCPP 1.6-J, ofrecido en varios modelos de licenciamiento: operar dentro de la red AutoVolt (agregador), servicio gestionado llave en mano (CPO-as-a-service), o licencia white-label con la marca propia del operador. AutoVolt construye y mantiene el software. Cobro por licencia o servicio, definido a la medida.",
+    "description": "Software CPO para operar una red de carga de vehículos eléctricos sobre OCPP 1.6-J, ofrecido en varios modelos de licenciamiento: operar dentro de la red AutoVolt (agregador), servicio gestionado (CPO-as-a-service), o licencia white-label con la marca propia del operador. AutoVolt construye y mantiene el software. Cobro por licencia o servicio, definido a la medida.",
     "provider": {
       "@type": "Organization",
       "name": "AutoVolt Energy S.A.S",
@@ -70,22 +70,37 @@
       {
         "@type": "Question",
         "name": "¿Qué modelos de licenciamiento ofrecen?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Tres principales: (A) operar dentro de la red AutoVolt con una suscripción, ideal para empezar; (B) servicio gestionado llave en mano, donde nosotros operamos la plataforma por ti; y (C) white-label, donde licencias la plataforma y la operas con tu propia marca. Elegimos contigo el que mejor se ajuste a tu proyecto." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Tres principales: (A) operar dentro de la red AutoVolt con una suscripción, ideal para empezar; (B) servicio gestionado, donde nosotros operamos la plataforma por ti y el dinero de las cargas entra a tu cuenta (tú llevas tu contabilidad, AutoVolt cobra una cuota de operación); y (C) white-label, donde licencias la plataforma y la operas con tu propia marca. Elegimos contigo el que mejor se ajuste a tu proyecto." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué modelo me conviene si estoy empezando?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende de tu capital y de si quieres operar o solo invertir. Si tienes ubicaciones y cargadores pero no quieres operar ni desarrollar, el servicio gestionado (B) suele ser el mejor punto de partida: nosotros operamos por ti y el dinero entra a tu cuenta. Si quieres arrancar pequeño y rápido sin desarrollar nada, el agregador (A) suma tus cargadores a la red AutoVolt y quedan visibles para conductores de todo el país. El white-label (C) es el paso premium cuando quieres tu propia marca y app. Lo definimos contigo." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tengo que encargarme de operar los cargadores?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No necesariamente. En el servicio gestionado (B), AutoVolt opera la plataforma y la operación por ti: tú solo pones cargadores y ubicaciones, y recibes el dinero en tu cuenta. En el agregador (A) y en el white-label (C) tú operas tu red, y AutoVolt mantiene el software por detrás." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Quién recibe el dinero de las cargas?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende del modelo. En el servicio gestionado (B) y en el white-label (C), el dinero del conductor entra directo a tu cuenta y tú manejas tu contabilidad; AutoVolt solo opera y/o licencia el software, y nunca custodia tu dinero. En el agregador (A), AutoVolt recauda el cobro y te liquida tu parte en cada corte." }
       },
       {
         "@type": "Question",
         "name": "¿Puedo operar con mi propia marca?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Esa es nuestra opción premium (white-label): licencias la plataforma y la operas como tuya — tu logo, el nombre de tu empresa, tu app, tus tarifas y tus ubicaciones. Si prefieres empezar más liviano, también puedes operar dentro de la red AutoVolt o tomar el servicio gestionado. AutoVolt construye y mantiene el software por detrás." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí, en la opción premium (white-label): licencias la plataforma y la operas como tuya — tu logo, el nombre de tu empresa, tu app en tiendas, tus tarifas y tus ubicaciones. Si prefieres empezar más liviano, en el agregador o el servicio gestionado la marca es de AutoVolt o compartida. AutoVolt construye y mantiene el software por detrás." }
       },
       {
         "@type": "Question",
         "name": "¿Mis conductores usan una app con mi marca?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. La app sale con el nombre y la marca de tu empresa, y tus conductores se registran en tu red, no en la de AutoVolt. Tú gestionas tus usuarios, tus tarifas y tu operación; AutoVolt queda invisible para tus clientes." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Solo en el white-label: ahí la app sale con el nombre y la marca de tu empresa en las tiendas, y tus conductores se registran en tu red. En el agregador y el servicio gestionado, tus conductores cargan desde la app de AutoVolt (una sola app, sin desarrollar la tuya)." }
       },
       {
         "@type": "Question",
         "name": "¿Cómo se cobra el software?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Es una licencia: un pago único de setup más un recurrente, que puede ser una cuota mensual fija o una cuota por cargador. No cobramos comisión sobre tus cargas, así que los ingresos de tus sesiones son tuyos. La cotización se hace a la medida." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Según el modelo: en el agregador pagas una suscripción; en el servicio gestionado, una cuota de operación fija; y en el white-label, una licencia (setup más un recurrente, mensual fijo o por cargador). En gestionado y white-label no cobramos comisión sobre tus cargas: esos ingresos son tuyos. La cotización se hace a la medida." }
       },
       {
         "@type": "Question",
@@ -133,13 +148,12 @@
     <section class="hero">
       <div class="hero__glow"></div>
       <div class="hero__content">
-        <span class="badge">⚡ Plataforma CPO · OCPP 1.6-J · Colombia · <strong>Próximamente</strong></span>
         <h1>Software para <span class="grad">electrolineras</span>, a tu medida.</h1>
         <p class="hero__sub">
-          Estamos afinando nuestra plataforma CPO para que operes carga eléctrica en el modelo que
-          se ajuste a ti: operando dentro de nuestra red, con el servicio gestionado de punta a punta,
-          o con tu propia marca y app (white-label).
-          Tú operas; nosotros construimos y mantenemos el software. <strong>Pronto disponible.</strong>
+          La plataforma CPO que opera carga eléctrica en Colombia, para montar tu red en el modelo que
+          se ajuste a ti: dentro de la red AutoVolt, con el <strong>servicio gestionado</strong> —nosotros
+          operamos por ti y el dinero de las cargas entra a tu cuenta— o con tu <strong>propia marca y
+          app</strong> (white-label). Tú operas y cobras; nosotros construimos y mantenemos el software.
         </p>
         <div class="hero__actions">
           <a href="#cotizar" class="btn btn--primary btn--lg">Quiero que me avisen</a>
@@ -169,12 +183,12 @@
         <article class="card">
           <div class="card__icon">💳</div>
           <h3>Cobro por kWh</h3>
-          <p>Tarifas por ubicación y horario, billetera prepago y débito automático al cierre de cada sesión. Conectas tu pasarela de pago y los ingresos entran a tu cuenta.</p>
+          <p>Tarifas por ubicación y horario, billetera prepago y débito automático al cierre de cada sesión. En el servicio gestionado y el white-label, <strong>los ingresos entran a tu cuenta</strong>; en el agregador, AutoVolt recauda y te liquida.</p>
         </article>
         <article class="card">
           <div class="card__icon">📲</div>
-          <h3>App con el nombre de tu empresa</h3>
-          <p>Tu app sale con tu logo y tu nombre: mapa, QR, sesión en vivo, historial y soporte. Tus conductores se registran en tu red; la experiencia es 100% tuya.</p>
+          <h3>App para tus conductores</h3>
+          <p>Mapa, QR, sesión en vivo, historial y soporte. En el white-label la app sale con <strong>tu marca y tu nombre en tiendas</strong>; en los demás modelos, tus conductores cargan desde la app de AutoVolt.</p>
         </article>
         <article class="card">
           <div class="card__icon">📊</div>
@@ -183,8 +197,8 @@
         </article>
         <article class="card">
           <div class="card__icon">🏷️</div>
-          <h3>Marca 100% propia</h3>
-          <p>Tu logo, tu nombre y tu identidad en la app y el panel. Es tu producto: AutoVolt queda invisible para tus usuarios.</p>
+          <h3>Marca propia (white-label)</h3>
+          <p>En el modelo premium, tu logo, tu nombre y tu identidad en la app y el panel: es tu producto y AutoVolt queda invisible para tus usuarios. En los demás modelos la marca es de AutoVolt o compartida.</p>
         </article>
         <article class="card">
           <div class="card__icon">🛡️</div>
@@ -239,7 +253,7 @@
         <article class="step">
           <span class="step__num">3</span>
           <h3>Operas y cobras</h3>
-          <p>Tus conductores cargan desde tu app, tú ves la operación en tu panel y los pagos entran a tu cuenta. Tú operas tu red; AutoVolt mantiene el software.</p>
+          <p>Tus conductores cargan, tú ves la operación en tu panel y, según el modelo, los pagos entran a tu cuenta (gestionado y white-label) o AutoVolt los recauda y te liquida (agregador). Tú operas tu red; AutoVolt mantiene el software.</p>
         </article>
       </div>
     </section>
@@ -250,21 +264,49 @@
         <h2>Elige el modelo que se ajusta a ti</h2>
         <p>No hay una sola forma de trabajar con nuestro software: desde operar dentro de la red AutoVolt hasta lanzar tu propia marca. Cuéntanos tu caso y te proponemos el mejor. El alcance y los costos quedan definidos en la cotización.</p>
       </div>
+      <p class="models__hint" style="text-align:center;margin:-12px auto 28px;max-width:680px;opacity:.85;">Los modelos se diferencian en tres cosas: <strong>de quién es la app</strong>, <strong>de quién es la marca</strong> y <strong>a qué cuenta entra el dinero</strong> de las cargas.</p>
       <div class="grid grid--3">
         <article class="card card--service">
           <span class="card__step">Modelo A</span>
           <h3>Opera en nuestra red</h3>
           <p>Sumas tus cargadores a la plataforma AutoVolt y empiezas a cobrar rápido, sin desarrollar nada. Pagas una suscripción; ideal para empezar pequeño.</p>
+          <p class="card__adv" style="margin-top:14px;font-size:.9rem;line-height:1.6;padding:10px 12px;border-radius:10px;background:rgba(46,204,113,.12);">
+            ✅ <strong>Ventaja:</strong> tus cargadores quedan visibles para <strong>todos los conductores de la red AutoVolt en el país</strong> — más demanda y ocupación sin hacer marketing propio.
+          </p>
+          <p class="card__specs" style="margin-top:14px;font-size:.9rem;line-height:1.7;">
+            <strong>App:</strong> la de AutoVolt<br>
+            <strong>Marca:</strong> AutoVolt<br>
+            <strong>Dinero:</strong> lo recauda AutoVolt y te lo liquida<br>
+            <strong>Pago a AutoVolt:</strong> suscripción
+          </p>
         </article>
         <article class="card card--service">
           <span class="card__step">Modelo B</span>
-          <h3>Servicio gestionado (llave en mano)</h3>
-          <p>Tú pones cargadores y ubicaciones; nosotros operamos la plataforma y la operación por ti. Pagas una cuota de servicio. Ideal si tienes capital pero no quieres operar ni desarrollar.</p>
+          <h3>Servicio gestionado</h3>
+          <p>Tú pones cargadores y ubicaciones; nosotros operamos la plataforma y la operación por ti. <strong>El dinero de las cargas entra a tu cuenta</strong> y tú llevas tu contabilidad; AutoVolt solo opera y cobra una cuota fija. Ideal si tienes capital pero no quieres operar ni desarrollar.</p>
+          <p class="card__adv" style="margin-top:14px;font-size:.9rem;line-height:1.6;padding:10px 12px;border-radius:10px;background:rgba(46,204,113,.12);">
+            ✅ <strong>Ventaja:</strong> recibes el dinero en tu cuenta y no te ocupas de operar — <strong>nosotros hacemos funcionar todo</strong> por ti.
+          </p>
+          <p class="card__specs" style="margin-top:14px;font-size:.9rem;line-height:1.7;">
+            <strong>App:</strong> la de AutoVolt (o compartida)<br>
+            <strong>Marca:</strong> AutoVolt o compartida<br>
+            <strong>Dinero:</strong> entra <em>directo a tu cuenta</em><br>
+            <strong>Pago a AutoVolt:</strong> cuota de operación (fija)
+          </p>
         </article>
         <article class="card card--service">
           <span class="card__step">Modelo C · premium</span>
           <h3>Tu propia marca (white-label)</h3>
           <p>Licencias la plataforma y la operas como tuya: tu logo, tu app, tus tarifas y tu pasarela. Pagas licencia (setup más recurrente, mensual fija o por cargador), sin comisión sobre tus cargas.</p>
+          <p class="card__adv" style="margin-top:14px;font-size:.9rem;line-height:1.6;padding:10px 12px;border-radius:10px;background:rgba(46,204,113,.12);">
+            ✅ <strong>Ventaja:</strong> marca y experiencia <strong>100% tuyas</strong> — construyes tu propio activo de negocio, sin comisión sobre tus cargas.
+          </p>
+          <p class="card__specs" style="margin-top:14px;font-size:.9rem;line-height:1.7;">
+            <strong>App:</strong> tuya (con tu nombre en tiendas)<br>
+            <strong>Marca:</strong> 100% tuya<br>
+            <strong>Dinero:</strong> a tu cuenta vía tu pasarela<br>
+            <strong>Pago a AutoVolt:</strong> licencia (setup + recurrente)
+          </p>
         </article>
       </div>
       <div class="cta-band" style="margin-top:40px;">
@@ -320,19 +362,31 @@
         </details>
         <details class="faq__item">
           <summary>¿Qué modelos de licenciamiento ofrecen?</summary>
-          <p>Tres principales: <strong>(A) operar dentro de la red AutoVolt</strong> con una suscripción, ideal para empezar; <strong>(B) servicio gestionado</strong> llave en mano, donde nosotros operamos la plataforma por ti; y <strong>(C) white-label</strong>, donde licencias la plataforma y la operas con tu propia marca. Elegimos contigo el que mejor se ajuste a tu proyecto.</p>
+          <p>Tres principales: <strong>(A) operar dentro de la red AutoVolt</strong> con una suscripción, ideal para empezar; <strong>(B) servicio gestionado</strong>, donde nosotros operamos la plataforma por ti y <strong>el dinero de las cargas entra a tu cuenta</strong> (tú llevas tu contabilidad, AutoVolt cobra una cuota de operación); y <strong>(C) white-label</strong>, donde licencias la plataforma y la operas con tu propia marca. Elegimos contigo el que mejor se ajuste a tu proyecto.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Qué modelo me conviene si estoy empezando?</summary>
+          <p>Depende de tu capital y de si quieres operar o solo invertir. Si tienes ubicaciones y cargadores pero <strong>no quieres operar ni desarrollar</strong>, el <strong>servicio gestionado (B)</strong> suele ser el mejor punto de partida: nosotros operamos por ti y el dinero entra a tu cuenta. Si quieres arrancar pequeño y rápido sin desarrollar nada, el <strong>agregador (A)</strong> suma tus cargadores a la red AutoVolt y quedan visibles para conductores de todo el país. El <strong>white-label (C)</strong> es el paso premium cuando quieres tu propia marca y app. Lo definimos contigo.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Tengo que encargarme de operar los cargadores?</summary>
+          <p>No necesariamente. En el <strong>servicio gestionado (B)</strong>, AutoVolt opera la plataforma y la operación por ti: tú solo pones cargadores y ubicaciones, y recibes el dinero en tu cuenta. En el <strong>agregador (A)</strong> y en el <strong>white-label (C)</strong> tú operas tu red, y AutoVolt mantiene el software por detrás.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Quién recibe el dinero de las cargas?</summary>
+          <p>Depende del modelo. En el <strong>servicio gestionado (B)</strong> y en el <strong>white-label (C)</strong>, el dinero del conductor <strong>entra directo a tu cuenta</strong> y tú manejas tu contabilidad; AutoVolt solo opera y/o licencia el software, y nunca custodia tu dinero. En el <strong>agregador (A)</strong>, AutoVolt recauda el cobro y te liquida tu parte en cada corte.</p>
         </details>
         <details class="faq__item">
           <summary>¿Puedo operar con mi propia marca?</summary>
-          <p>Sí. Esa es nuestra opción premium (white-label): licencias la plataforma y la operas como tuya — tu logo, el nombre de tu empresa, tu app, tus tarifas y tus ubicaciones. Si prefieres empezar más liviano, también puedes operar dentro de la red AutoVolt o tomar el servicio gestionado. AutoVolt construye y mantiene el software por detrás.</p>
+          <p>Sí, en la opción premium (white-label): licencias la plataforma y la operas como tuya — tu logo, el nombre de tu empresa, tu app en tiendas, tus tarifas y tus ubicaciones. Si prefieres empezar más liviano, en el agregador o el servicio gestionado la marca es de AutoVolt o compartida. AutoVolt construye y mantiene el software por detrás.</p>
         </details>
         <details class="faq__item">
           <summary>¿Mis conductores usan una app con mi marca?</summary>
-          <p>Sí. La app sale con el nombre y la marca de tu empresa, y tus conductores se registran en tu red, no en la de AutoVolt. Tú gestionas tus usuarios, tus tarifas y tu operación; AutoVolt queda invisible para tus clientes.</p>
+          <p>Solo en el white-label: ahí la app sale con el nombre y la marca de tu empresa en las tiendas, y tus conductores se registran en tu red. En el agregador y el servicio gestionado, tus conductores cargan desde la app de AutoVolt (una sola app, sin desarrollar la tuya).</p>
         </details>
         <details class="faq__item">
           <summary>¿Cómo se cobra el software?</summary>
-          <p>Es una licencia: un pago único de setup más un recurrente, que puede ser una cuota mensual fija o una cuota por cargador. No cobramos comisión sobre tus cargas, así que los ingresos de tus sesiones son tuyos. La cotización se hace a la medida.</p>
+          <p>Según el modelo: en el <strong>agregador</strong> pagas una <strong>suscripción</strong>; en el <strong>servicio gestionado</strong>, una <strong>cuota de operación fija</strong>; y en el <strong>white-label</strong>, una <strong>licencia</strong> (setup más un recurrente, mensual fijo o por cargador). En gestionado y white-label no cobramos comisión sobre tus cargas: esos ingresos son tuyos. La cotización se hace a la medida.</p>
         </details>
         <details class="faq__item">
           <summary>¿Funciona en Colombia y cumple la normativa?</summary>
