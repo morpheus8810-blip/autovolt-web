@@ -3,7 +3,7 @@
 Sitio web oficial (landing público) de **AutoVolt Energy**. Presenta la propuesta
 para **conductores** (app), **conjuntos residenciales**, **hoteles y hospitales**,
 **centros comerciales**, **empresas/operadores** (importación e instalación de hardware)
-y **operadores que licencian el software** (varios modelos: agregador, servicio gestionado y white-label), y aloja las páginas legales.
+y **operadores que licencian el software** (dos modelos: licencia base y white-label), y aloja las páginas legales.
 
 Es un sitio **100% estático**: HTML + CSS, sin framework ni paso de build.
 Dentro del workspace vive en `Web/` y se despliega de forma independiente de la
@@ -32,7 +32,7 @@ Producción: **https://www.autovoltenergy.net** (GitHub Pages)
 | `cargadores-centros-comerciales.html` | Modelo anfitrión para sitios de alta afluencia: espacio + conexión; comisión definida por contrato. Carga rápida DC desde 20 kW |
 | `cargadores-hoteles-hospitales.html` | Modelo anfitrión para hoteles y hospitales: AC 7 kW (huéspedes) o DC desde 20 kW (visitantes/personal), según evaluación del sitio |
 | `soluciones-para-empresas.html` | Página comercial: 2 líneas para empresas/operadores (importación de hardware + instalación). Cruza a la página de software para la plataforma |
-| `software-para-electrolineras.html` | Página comercial: licenciamiento del software CPO en varios modelos (agregador / servicio gestionado / white-label; keyword principal "software para electrolineras"). Modelo a decidir según oferta |
+| `software-para-electrolineras.html` | Página comercial: licenciamiento del software CPO en dos modelos (licencia base / white-label; keyword principal "software para electrolineras"). En ambos el operador opera y recibe el dinero directo; AutoVolt no custodia |
 | `como-poner-cargadores-en-mi-conjunto.html` | Guía SEO (top-of-funnel) que enlaza a la página comercial de conjuntos |
 | `terminos.html` | Términos y Condiciones |
 | `privacidad.html` | Política de Privacidad y Tratamiento de Datos |
@@ -79,11 +79,12 @@ ante un comité de copropiedad, un centro comercial o una empresa.
   carga rápida (DC desde 20 kW) solo donde la capacidad y el flujo lo justifiquen.
 - **Empresas/operadores:** dos líneas (importación de hardware + instalación) sujetas a alcance,
   permisos y compatibilidad (p. ej. OCPP 1.6-J). La plataforma se ofrece aparte, en la página de software.
-- **Software (operadores):** se ofrece como **menú de modelos de licenciamiento** (a decidir según la
-  oferta real): operar dentro de la red AutoVolt (agregador), servicio gestionado llave en mano, o
-  **licencia white-label** (el operador opera con su propia marca, app, tarifas, conductores y pasarela;
-  AutoVolt cobra licencia sin comisión sobre las cargas). Detalle de los modelos en
-  `../Operativo/docs/fase2-modelos-licenciamiento.md`.
+- **Software (operadores):** se ofrece en **dos modelos de licenciamiento**: **licencia base** (el
+  operador opera con la app y la marca de AutoVolt o una genérica) y **licencia white-label** (opera con
+  su propia marca, app, tarifas, conductores y pasarela). En ambos el operador **opera y recibe el dinero
+  directo a su cuenta**; AutoVolt cobra licencia **sin comisión** sobre las cargas y **no custodia**. Los
+  modelos "operado por AutoVolt" y "agregador" quedaron **descartados** (custodia de dinero). Detalle en
+  `../Operativo/docs/fase2-multioperador/fase2-modelos-licenciamiento.md`.
 
 Al editar estas páginas, mantener este criterio: preferir verbos como *evaluamos, cotizamos,
 proponemos* y condicionantes (*sujeto a, según contrato, cuando el flujo lo justifique*)

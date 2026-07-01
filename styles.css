@@ -262,6 +262,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Grid + tarjetas ───────────────────────────────────────────────── */
 .grid { display: grid; gap: 22px; }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
 .card {
   background: var(--bg-card-alt);
   border: 1px solid var(--border);
@@ -615,7 +616,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 860px) {
-  .grid--3, .contact, .audience, .platform { grid-template-columns: 1fr; }
+  .grid--3, .grid--2, .contact, .audience, .platform { grid-template-columns: 1fr; }
   .platform { grid-template-columns: repeat(2, 1fr); }
   .nav__links { display: none; }
   .hero__stats { gap: 32px; }
