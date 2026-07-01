@@ -27,7 +27,7 @@
     "@type": "Service",
     "serviceType": "Software para electrolineras (plataforma CPO)",
     "name": "Plataforma de software para electrolineras AutoVolt Energy",
-    "description": "Software CPO para operar una red de carga de vehículos eléctricos sobre OCPP 1.6-J, ofrecido en dos modelos de licenciamiento: licencia base (el operador opera con la app y la marca de AutoVolt o genérica) o licencia white-label con la marca propia del operador. En ambos el operador opera y el dinero de las cargas entra a su cuenta; AutoVolt construye y mantiene el software, sin comisión sobre las cargas. Cobro por licencia, definido a la medida.",
+    "description": "Software CPO para operar una red de carga de vehículos eléctricos sobre OCPP 1.6-J, ofrecido en dos modelos de licenciamiento: licencia base (el operador opera con la app y la marca de AutoVolt o genérica) o licencia white-label con la marca propia del operador. En ambos el operador opera y el dinero de las cargas entra a su cuenta; AutoVolt construye y mantiene el software. La licencia base se cobra por comisión sobre la operación y el white-label por licencia sin comisión; definido a la medida.",
     "provider": {
       "@type": "Organization",
       "name": "AutoVolt Energy S.A.S",
@@ -38,7 +38,7 @@
       "@type": "Offer",
       "priceCurrency": "COP",
       "url": "https://www.autovoltenergy.net/software-para-electrolineras.html",
-      "description": "Dos modelos: licencia base (mensual fija o por cargador) o licencia white-label (setup más recurrente, mensual fijo o por cargador). Sin comisión sobre tus cargas. Cotización a la medida."
+      "description": "Dos modelos: licencia base (por comisión sobre la operación) o white-label (licencia: setup más recurrente, sin comisión sobre tus cargas). Cotización a la medida."
     }
   }
   </script>
@@ -69,13 +69,18 @@
       },
       {
         "@type": "Question",
+        "name": "¿El cargador necesita terminal de pago (POS) con tarjeta integrado?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. En Colombia, el POS integrado de fábrica de muchos cargadores chinos es prácticamente inservible: no está afiliado a la adquirencia local (Redeban, Credibanco, pasarelas) y el dinero no cae en tu cuenta. Con AutoVolt el pago va desacoplado del cargador: el conductor paga por la app vía una pasarela local certificada y el cargador solo autoriza la sesión por OCPP. Al importar, pide el cargador sin módulo POS." }
+      },
+      {
+        "@type": "Question",
         "name": "¿Qué modelos de licenciamiento ofrecen?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Dos: (1) licencia base, donde licencias la plataforma y la operas tú con la app y la marca de AutoVolt (o una genérica); y (2) white-label, donde la operas con tu propia marca y tu app en tiendas. En ambos tú operas, el dinero de las cargas entra directo a tu cuenta y AutoVolt no cobra comisión sobre tus cargas. Elegimos contigo el que mejor se ajuste a tu proyecto." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Dos: (1) licencia base, donde licencias la plataforma y la operas tú con la app y la marca de AutoVolt (o una genérica), pagando una comisión sobre la operación; y (2) white-label, donde la operas con tu propia marca y tu app en tiendas, con una licencia sin comisión sobre tus cargas. En ambos tú operas y el dinero de las cargas entra directo a tu cuenta. Elegimos contigo el que mejor se ajuste a tu proyecto." }
       },
       {
         "@type": "Question",
         "name": "¿Qué modelo me conviene si estoy empezando?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Si quieres arrancar rápido y económico, la licencia base es el mejor punto de partida: operas con la app de AutoVolt y pagas solo una licencia, sin comisión sobre tus cargas. El white-label es el paso premium, cuando quieres tu propia marca y tu app en tiendas. Lo definimos contigo." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Si quieres arrancar rápido y económico, la licencia base es el mejor punto de partida: operas con la app de AutoVolt y pagas por comisión sobre la operación (la entrada más económica). El white-label es el paso premium, cuando quieres tu propia marca y tu app en tiendas, con una licencia sin comisión. Lo definimos contigo." }
       },
       {
         "@type": "Question",
@@ -100,7 +105,7 @@
       {
         "@type": "Question",
         "name": "¿Cómo se cobra el software?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Con una licencia (mensual fija o por cargador). El white-label añade un setup de marca al inicio. En ninguno cobramos comisión sobre tus cargas: esos ingresos son tuyos. La cotización se hace a la medida." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende del modelo: la licencia base es un modelo por comisión sobre la operación; el white-label es una licencia (con un setup de marca al inicio), sin comisión sobre tus cargas. En ambos el dinero de las cargas entra a tu cuenta. La cotización se hace a la medida." }
       },
       {
         "@type": "Question",
@@ -269,20 +274,22 @@
         <article class="card card--service">
           <span class="card__step">Licencia base</span>
           <h3>Licencias el software y operas tú</h3>
-          <p>Licencias la plataforma CPO y operas tu estación: tus tarifas, tus conductores y tu pasarela. <strong>El dinero de las cargas entra directo a tu cuenta.</strong> AutoVolt provee y mantiene el software, sin comisión sobre tus cargas.</p>
+          <p style="margin:-6px 0 10px;font-style:italic;opacity:.8;font-size:.95rem;">“Tú operas, nosotros ponemos la tecnología.”</p>
+          <p>Licencias la plataforma CPO y operas tu estación: tus tarifas, tus conductores y tu pasarela. <strong>El dinero de las cargas entra directo a tu cuenta.</strong> AutoVolt provee y mantiene el software y cobra una comisión sobre la operación, definida en la cotización.</p>
           <p class="card__adv" style="margin-top:14px;font-size:.9rem;line-height:1.6;padding:10px 12px;border-radius:10px;background:rgba(46,204,113,.12);">
-            ✅ <strong>Ventaja:</strong> control total de tu operación y <strong>sin comisión sobre tus ingresos</strong> — arrancas rápido con una plataforma ya construida.
+            ✅ <strong>Ventaja:</strong> la <strong>entrada más económica</strong> — arrancas rápido con una plataforma ya construida y pagas según tu operación.
           </p>
           <p class="card__specs" style="margin-top:14px;font-size:.9rem;line-height:1.7;">
             <strong>App:</strong> la de AutoVolt (o genérica)<br>
             <strong>Marca:</strong> AutoVolt / genérica<br>
             <strong>Dinero:</strong> <em>directo a tu cuenta</em> vía tu pasarela<br>
-            <strong>Pago a AutoVolt:</strong> licencia (mensual fija o por cargador)
+            <strong>Pago a AutoVolt:</strong> comisión sobre las cargas (definida en la cotización)
           </p>
         </article>
         <article class="card card--service">
           <span class="card__step">White-label · premium</span>
           <h3>Tu propia marca (white-label)</h3>
+          <p style="margin:-6px 0 10px;font-style:italic;opacity:.8;font-size:.95rem;">“Tu marca de cara al público, nuestra tecnología por debajo.”</p>
           <p>Licencias la plataforma y la operas como tuya: tu logo, tu app, tus tarifas y tu pasarela. Pagas licencia (setup más recurrente, mensual fija o por cargador), sin comisión sobre tus cargas.</p>
           <p class="card__adv" style="margin-top:14px;font-size:.9rem;line-height:1.6;padding:10px 12px;border-radius:10px;background:rgba(46,204,113,.12);">
             ✅ <strong>Ventaja:</strong> marca y experiencia <strong>100% tuyas</strong> — construyes tu propio activo de negocio, sin comisión sobre tus cargas.
@@ -302,6 +309,34 @@
         </div>
         <a href="#cotizar" class="btn btn--primary btn--lg">Avísame cuando esté lista</a>
       </div>
+    </section>
+
+    <!-- ── Pago desacoplado (no al POS chino) ───────────────────────── -->
+    <section class="section section--alt">
+      <div class="section__head">
+        <p class="platform__kicker">Una decisión que te ahorra dinero y dolores de cabeza</p>
+        <h2>El pago vive en tu plataforma, no en el cargador</h2>
+        <p>Muchos cargadores chinos ofrecen un “terminal de pago con tarjeta” (POS) integrado. En Colombia, ese módulo es prácticamente inservible — y no lo necesitas.</p>
+      </div>
+      <div class="grid grid--2">
+        <article class="card card--service">
+          <span class="card__step">✗ POS integrado de fábrica</span>
+          <p class="card__specs" style="margin-top:14px;font-size:.92rem;line-height:1.7;">
+            <strong>No está afiliado</strong> a la adquirencia colombiana (Redeban, Credibanco, pasarelas): sin las llaves ni el código de comercio local, no liquida ni una transacción.<br><br>
+            <strong>Firmware cerrado</strong>, certificado para otro mercado, que no puedes reprogramar para el switch de pagos local.<br><br>
+            <strong>El dinero no cae en tu cuenta</strong> ni en tu flujo local: imposible de conciliar, facturar (DIAN) o cumplir la norma.
+          </p>
+        </article>
+        <article class="card card--service">
+          <span class="card__step">✓ Pago desacoplado — el método AutoVolt</span>
+          <p class="card__specs" style="margin-top:14px;font-size:.92rem;line-height:1.7;">
+            El cobro se hace <strong>por la app</strong>, a través de una pasarela local certificada.<br><br>
+            El cargador <strong>solo autoriza la sesión vía OCPP</strong> — es “tonto” en pagos.<br><br>
+            <strong>Funciona hoy</strong>, cumple la norma colombiana y no dependes de un módulo de pago extranjero atado a otro país.
+          </p>
+        </article>
+      </div>
+      <p class="models__hint" style="text-align:center;margin:24px auto 0;max-width:720px;opacity:.9;"><strong>Recomendación al importar:</strong> pide el cargador <strong>sin módulo POS</strong> (ahorras costo) y compatible con OCPP 1.6-J / 2.0.1. El POS embebido suena bien en la ficha técnica, pero es hardware muerto para pagos en Colombia.</p>
     </section>
 
     <!-- ── Por qué AutoVolt ─────────────────────────────────────────── -->
@@ -347,12 +382,16 @@
           <p>No necesariamente. Si tus cargadores hablan OCPP 1.6-J, evaluamos su integración a la plataforma. También podemos cotizar importación e instalación si lo prefieres, sujeto a compatibilidad, permisos y alcance.</p>
         </details>
         <details class="faq__item">
+          <summary>¿El cargador necesita terminal de pago (POS) con tarjeta integrado?</summary>
+          <p>No. En Colombia, el <strong>POS integrado</strong> de fábrica de muchos cargadores chinos es prácticamente <strong>inservible</strong>: no está afiliado a la adquirencia local (Redeban, Credibanco, pasarelas) y el dinero no cae en tu cuenta. Con AutoVolt el <strong>pago va desacoplado</strong> del cargador: el conductor paga por la app vía una pasarela local certificada y el cargador <strong>solo autoriza la sesión por OCPP</strong>. Al importar, pide el cargador <strong>sin módulo POS</strong>.</p>
+        </details>
+        <details class="faq__item">
           <summary>¿Qué modelos de licenciamiento ofrecen?</summary>
-          <p>Dos: <strong>(1) licencia base</strong>, donde licencias la plataforma y la operas tú con la app y la marca de AutoVolt (o una genérica); y <strong>(2) white-label</strong>, donde la operas con tu propia marca y tu app en tiendas. En ambos <strong>tú operas</strong>, <strong>el dinero de las cargas entra directo a tu cuenta</strong> y AutoVolt no cobra comisión sobre tus cargas. Elegimos contigo el que mejor se ajuste a tu proyecto.</p>
+          <p>Dos: <strong>(1) licencia base</strong>, donde licencias la plataforma y la operas tú con la app y la marca de AutoVolt (o una genérica), pagando una <strong>comisión sobre la operación</strong>; y <strong>(2) white-label</strong>, donde la operas con tu propia marca y tu app en tiendas, con una <strong>licencia sin comisión</strong>. En ambos <strong>tú operas</strong> y <strong>el dinero de las cargas entra directo a tu cuenta</strong>. Elegimos contigo el que mejor se ajuste a tu proyecto.</p>
         </details>
         <details class="faq__item">
           <summary>¿Qué modelo me conviene si estoy empezando?</summary>
-          <p>Si quieres arrancar <strong>rápido y económico</strong>, la <strong>licencia base</strong> es el mejor punto de partida: operas con la app de AutoVolt y pagas solo una licencia, sin comisión sobre tus cargas. El <strong>white-label</strong> es el paso premium, cuando quieres tu propia marca y tu app en tiendas. Lo definimos contigo.</p>
+          <p>Si quieres arrancar <strong>rápido y económico</strong>, la <strong>licencia base</strong> es el mejor punto de partida: operas con la app de AutoVolt y pagas por <strong>comisión</strong> sobre la operación (la entrada más económica). El <strong>white-label</strong> es el paso premium, cuando quieres tu propia marca y tu app en tiendas, con una <strong>licencia sin comisión</strong>. Lo definimos contigo.</p>
         </details>
         <details class="faq__item">
           <summary>¿Tengo que encargarme de operar los cargadores?</summary>
@@ -372,7 +411,7 @@
         </details>
         <details class="faq__item">
           <summary>¿Cómo se cobra el software?</summary>
-          <p>Con una <strong>licencia</strong> (mensual fija o por cargador). El <strong>white-label</strong> añade un <strong>setup</strong> de marca al inicio. En ninguno cobramos comisión sobre tus cargas: esos ingresos son tuyos. La cotización se hace a la medida.</p>
+          <p>Depende del modelo: la <strong>licencia base</strong> es un modelo por <strong>comisión</strong> sobre la operación; el <strong>white-label</strong> es una <strong>licencia</strong> (con un <strong>setup</strong> de marca al inicio), <strong>sin comisión</strong> sobre tus cargas. En ambos el dinero de las cargas entra a tu cuenta. La cotización se hace a la medida.</p>
         </details>
         <details class="faq__item">
           <summary>¿Funciona en Colombia y cumple la normativa?</summary>

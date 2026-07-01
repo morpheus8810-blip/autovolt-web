@@ -80,10 +80,11 @@ ante un comité de copropiedad, un centro comercial o una empresa.
 - **Empresas/operadores:** dos líneas (importación de hardware + instalación) sujetas a alcance,
   permisos y compatibilidad (p. ej. OCPP 1.6-J). La plataforma se ofrece aparte, en la página de software.
 - **Software (operadores):** se ofrece en **dos modelos de licenciamiento**: **licencia base** (el
-  operador opera con la app y la marca de AutoVolt o una genérica) y **licencia white-label** (opera con
-  su propia marca, app, tarifas, conductores y pasarela). En ambos el operador **opera y recibe el dinero
-  directo a su cuenta**; AutoVolt cobra licencia **sin comisión** sobre las cargas y **no custodia**. Los
-  modelos "operado por AutoVolt" y "agregador" quedaron **descartados** (custodia de dinero). Detalle en
+  operador opera con la app y la marca de AutoVolt o una genérica; se cobra por **comisión** sobre la
+  operación) y **licencia white-label** (opera con su propia marca, app, tarifas, conductores y pasarela;
+  **licencia sin comisión**). En ambos el operador **opera y recibe el dinero directo a su cuenta** y
+  AutoVolt **no custodia**. Los modelos "operado por AutoVolt" y "agregador" quedaron **descartados**
+  (custodia de dinero). **Sin cifras publicadas** (se definen en la cotización). Detalle en
   `../Operativo/docs/fase2-multioperador/fase2-modelos-licenciamiento.md`.
 
 Al editar estas páginas, mantener este criterio: preferir verbos como *evaluamos, cotizamos,
